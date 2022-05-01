@@ -1,6 +1,15 @@
 
         {% include 'header.html' %}
         {% load static %}
+   <style>
+     #cancel-btn{
+       width:90px;
+       height:40px;
+       background-color:black;
+       color:white;
+     }
+   </style>
+
         <div>
             <img src="{% static '/image/hosp.jpeg' %}" class="imgs">
         </div>
@@ -8,6 +17,6 @@
        <h3>If you are facing any  problem please contact in below number</h3><br><br>
        <p><strong><h4>OR</h4></strong></p><br><br>
        <h3>Contact to suppert through email</h3><br><br>
-       <a href="mailto:developermahajan496@gmail.com" ><button type="button">Email</button></a><br>
-         <button type="button" id="patient-back-btn"><a href="/" >Back to Home</a></button>
+       <a href="mailto:developermahajan496@gmail.com" ><button type="button"id="cancel-btn">Email</button></a><br>
+         <button type="button" id="patient-back-btn"><a href="/" > Home</a></button>
          {% include 'footer.html' %}
