@@ -1,0 +1,22 @@
+
+    {% load static %}
+        {% include 'header.html' %}
+    
+       <h1> welcome to adminsitrator panel</h1>
+       <strong><h2>Here is the details of all doctors</h2></strong>
+     
+       <div>
+           <img src="{% static '/image/record.jpg' %}" id="record-img">
+       </div>
+       <h1 style="margin-left:100px;">List</h1>
+   <table border="1" id="admin-table">
+       <tr><th>Doctor id</th><th>Doctor name</th><th>Doctor email</th></tr>
+       {% for doc in doctor %}
+       <tr><td>{{doc.id}}</td><td>{{doc.name}}</td><td>{{doc.email}}</td></tr>
+        {% endfor %}
+   </table>
+    
+
+<button type="button"id="patient-back-btn"><a href="/" class="text-white text-decoration-none">Back to Home</a></button>
+        
+{% include 'footer.html' %}

@@ -1,0 +1,36 @@
+
+        {% load static %}
+        {% include 'header.html' %}
+        <style>
+            #aman1{
+                margin:10px;
+                
+            }
+            #sub{
+                width:90px;
+                height:30px;
+                background:#000;
+                color:#fff;
+            }
+        </style>
+        <h1>Please login with your credentials</h1>
+        {% for msg in messages %}
+        <div id="message2">
+        <p >{{msg}}<span id="cross2" ><i class="fa fa-hand-scissors fa-lg" onclick="aman2()" ></i></span></p>
+        </div>
+        {% endfor %}
+        <div>
+            <img src="{% static '/image/doctor-portal.jpg' %}" id='details-img'>
+        </div>
+        <form method="POST" >
+            <h2>Login</h2>
+            {% csrf_token %}
+            <label for='aman1'>Email</label>
+            <input type="email" placholder="enter your email" id="aman1" name="email"size="30" required><br>
+            <label for='aman2'>Password</label>
+            <input type="text" placholder="enter your password" id="aman2" name="password" size="29" requireds><br><br>
+            <input type="submit" value="submit" id="sub">
+
+        </form>
+        <button type="button" id="patient-back-btn"><a href="/" >Back to Home</a></button>
+        {% include 'footer.html' %}

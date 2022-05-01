@@ -1,0 +1,44 @@
+#message1{
+    background-color: rgb(95, 10, 10);
+    border:2px solid black;
+    color:floralwhite;
+    padding:5px;
+    height:7vh;
+}
+#message2{
+    background-color: rgb(95, 10, 10);
+    border:2px solid black;
+    color:floralwhite;
+    padding:5px;
+    height:7vh;
+}
+#message3{
+    background-color: rgb(95, 10, 10);
+    border:2px solid black;
+    color:floralwhite;
+    padding:5px;
+    height:7vh;
+}
+#message4{
+    background-color: rgb(95, 10, 10);
+    border:2px solid black;
+    color:floralwhite;
+    padding:5px;
+    height:7vh;
+}
+#cross1{
+    cursor: pointer;
+    float:right;
+}
+#cross2{
+    cursor: pointer;
+    float:right;
+}
+#cross3{
+    cursor: pointer;
+    float:right;
+}
+#cross4{
+    cursor: pointer;
+    float:right;
+}

@@ -1,0 +1,38 @@
+
+        {% include 'header.html' %}
+        {% load static %}
+
+       <h1> Welcome to mahajan clinic </h1>
+    
+<div>
+    <img src="{% static '/image/WEL.jpeg' %}"class="imgs">
+</div>
+       <h3>Hope {{name}} you are feeling better</h1>
+        <h2> Here you will get all the details about but you have to do before comming in the lab</h2>
+{% comment %} here i add tab {% endcomment %}
+<div id="tabss">
+    <div class="tab">
+        <div class="tab-item" id="tab-item1">
+          checkup morning
+        </div>
+        <div class="tab-item" id="tab-item2">
+            Before 
+        </div>
+        <div class="tab-item" id="tab-item3">
+            After
+        </div>
+    </div>
+    <div id="content1">
+     <h3> In the morning you have to drink minimum 1.5 litre and also Don't take any meal, it is mandotory for any checkup and you need to take only fluid.</h3>
+    </div>
+    <div id="content2">
+      <h3> It is mandotory to come in the clinic at exat time , if you fail to reach within your time period that has been given then appointment would cancel and you cannot get any refund so it is mandatory to reach in exat time.Also please wear mass and use sanitizers in the clinic and most importanty thing donot touch any steel appliance and other thing without sanitizing.</h3>
+    </div>
+    <div id="content3">
+       <h3>Hope you are feeling good now and have some relax.It's our request to you that please follow procedure what doctor have give please follow it and also please complete your medicine course and if you have any problem please contact immediately with doctor , we are providing 24X7 service ,any time you get consulation from doctors.</h3>
+    </div>
+</div>
+
+       <button type="button" id="patient-back-btn"><a href="/" >Back to Home</a></button>
+       <script src="{% static '/js/script1.js' %}"></script>
+       {% include 'footer.html' %}

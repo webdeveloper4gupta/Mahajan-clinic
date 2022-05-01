@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#tabss{
+    border:1px solid black;
+    margin: 3px;
+}
+.tab{
+    background-color: black;
+    display:grid;
+    grid-template-columns: 33vw 33vw 30vw;
+    height:5vh;
+    color:white;
+
+}
+.tab-item{
+    border:1px solid white;
+    text-align:center;
+    cursor: pointer;
+}
+.tab-item:hover{
+    border:1px solid white;
+    text-align:center;
+    cursor: pointer;
+    background-color: brown;
+   
+}
+#content1{
+    background-color: grey;
+    color:black;
+    height:20vh;
+   border:1px solid black;
+}
+#content2{
+    background-color: grey;
+    color:black;
+    height:20vh;
+    display: none;
+    border:1px solid black;
+}
+#content3{
+    background-color: grey;
+    color:black;
+    height:20vh;
+    display: none;
+    border:1px solid black;
+}

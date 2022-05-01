@@ -1,0 +1,26 @@
+#admin-table{
+    width:40vw;
+    color:red;
+    font-weight:bold;
+    font-size:16px;
+}
+#patient-table{
+    width:60vw;
+    color:red;
+    font-weight:bold;
+    font-size:16px;
+}
+@media screen and (max-width:600px) {
+    #admin-table{
+        width:100vw;
+        color:red;
+        font-weight:bold;
+        font-size:10px;
+    }
+    #patient-table{
+        width:100vw;
+        color:red;
+        font-weight:bold;
+        font-size:10px;
+    }
+}

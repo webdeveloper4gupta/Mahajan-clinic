@@ -1,0 +1,28 @@
+
+        {% load static %}
+        {% include 'header.html' %}
+        <style>
+            #aman1{
+                margin:15px;
+            }
+        </style>
+      <h1> welcome to mahajn clinic</h1>
+      {% for msg in messages %}
+      <div id="message1">
+      <p >{{msg}}<span id="cross1" ><i class="fa fa-hand-scissors fa-lg" onclick="aman()" ></i></span></p>
+      </div>
+      {% endfor %}
+      <div>
+          <img src="{% static '/image/appointment1.jpg' %}" id="appointment-img">
+      </div>
+      <form method="post">
+          <h1>Login</h1>
+          {% csrf_token %}
+          <label for="aman1">Enter your appointment password</label>
+          <input type="text" placeholder="enter your password" name="password" id="aman1"><br>
+          <input type="submit" value="submit" id="sub">
+          
+      </form>
+      <button type="button" id="patient-back-btn"><a href="/" >Back to Home</a></button>
+      {% include 'footer.html' %}
+   

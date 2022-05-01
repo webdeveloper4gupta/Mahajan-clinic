@@ -1,0 +1,43 @@
+#jumbotrons{
+    background-color: #4c8560;
+    color: #621616;
+    height:20vh;
+}
+#marq{
+    padding-top:5vh;
+    font-size:30px;
+}
+.container{
+    display:grid;
+   
+    grid-template-columns: 45vw 45vw;
+}
+#img1{
+    border:2px solid black;
+    border-radius: 35px;
+}
+#amana1{
+    margin-top:30px;
+}
+#btn1{
+    margin-left:250px;
+    margin-top:50px;
+    width:100px;
+    height:50px;
+}
+@media screen and (max-width:600px) {
+    #img1{
+        width:130px;
+        height:300px;
+    }  
+    #amana1{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+    #btn1{
+        margin-left:50px;
+        margin-top:10px;
+    }
+}
+

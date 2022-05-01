@@ -1,0 +1,99 @@
+
+        {% load static %}
+
+        {% include 'header.html' %}
+        <style>
+            *{
+                padding: 0;margin: 0;
+            }
+          .aman1{
+              border:2px solid black;
+              margin:2px;
+            
+          }
+          #aman3{
+              display:none;
+            border:2px solid black;
+              {% comment %} margin:3px; {% endcomment %}
+             background:grey;
+             color:#000;
+          }
+          #aman7{
+              display:none;
+            border:2px solid black;
+              {% comment %} margin:3px; {% endcomment %}
+              background:grey;
+              color:#000;
+          }
+          #aman10{
+              display:none;
+            border:2px solid black;
+              {% comment %} margin:3px; {% endcomment %}
+              color:#000;
+              background:grey;
+          }
+          #sub{
+            width:90px;
+            height:30px;
+            background:#000;
+            color:#fff;
+        }
+        #clear{
+            width:90px;
+            height:30px;
+            background:#006;
+            color:#fff;
+        }
+        </style>
+        {% for msg in messages %}
+        <div id="message3">
+            <p >{{msg}}<span id="cross3" ><i class="fa fa-hand-scissors fa-lg" onclick="aman3()" ></i></span></p>
+            </div>
+        {% endfor %}
+    <div id="patient-head">
+        <img src="{% static '/image/appointment.jpg' %}" id="patient-head-img">
+    </div>
+        <h1> Appointment form</h1>
+        <form method="post" style="width:50vw; ">
+            <fieldset>
+          {% csrf_token %}
+          {{forms.as_p}}<br>
+          <input type="submit" value="submit"id="sub">
+          <input type="reset" value="clear" id='clear'>
+            </fieldset>
+        </form>
+        <h2 style="margin:10px;">Why take appointment immediately if you have any problem?</h2>
+        {% comment %} here i addd  {% endcomment %}
+        <div class="aman1">
+            <p id="aman2" style="text-align:center; cursor:pointer; background:black; color:white; height:8vh;padding-top:9px;">Side-Effects</p>
+        </div>
+        <div id="aman3">
+            <p id="aman4">In medicine, a side effect is an effect, whether therapeutic or adverse, that is secondary to the one intended; although the term is predominantly employed to describe adverse effects, it can also apply to beneficial, but unintended, consequences of the use of a drug. Developing drugs is a complicated process, because no two people are exactly the same, so even drugs that have virtually no side effects, might be difficult for some people. Also, it is difficult to make a drug that targets one part of the body but that does not affect other parts,[1] the fact that increases the risk of side effects in the untargeted parts.</p>
+        </div>
+        <div class="aman1">
+            <p id="aman6"style="text-align:center; cursor:pointer; background:black; color:white; height:8vh; padding-top:9px;">Problems</p>
+        </div>
+        <div id="aman7">
+            <p id="aman8">Computer-induced health problems can be an umbrella term for the various problems a computer user can develop from extended and incorrect computer use. A computer user may experience many physical health problems from using computers extensively over a prolonged period of time in an inefficient manner. The computer user may have poor etiquette when using peripherals, for example incorrect posture. Reportedly, excessive use of electronic screen media can have ill effects on mental health related to mood, cognition, and behavior, even to the point of hallucination</p>
+        </div>
+        <div class="aman1">
+            <p id="aman9"style="text-align:center; cursor:pointer; background:black; color:white; height:8vh;padding-top:9px;">Life threat</p>
+        </div>
+        <div id="aman10">
+            <p id="aman11">A disease is a particular abnormal condition that negatively affects the structure or function of all or part of an organism,[1] and that is not immediately due to any external injury.[2][3] Diseases are often known to be medical conditions that are associated with specific signs and symptoms. A disease may be caused by external factors such as pathogens or by internal dysfunctions. For example, internal dysfunctions of the immune system can produce a variety of different diseases, including various forms of immunodeficiency, hypersensitivity, allergies and autoimmune disorders.</p>
+        </div>
+
+        <button type="button" id="patient-back-btn"><a href="/" >Back to Home</a></button>
+        <script>
+            $("#aman2").click(()=>{
+                $("#aman3").toggle();
+            })
+            $("#aman6").click(()=>{
+                $("#aman7").toggle();
+            })
+            $("#aman9").click(()=>{
+                $("#aman10").toggle();
+            })
+         </script>
+   {% include 'footer.html' %}
+  

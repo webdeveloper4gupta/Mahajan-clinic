@@ -1,0 +1,39 @@
+
+        {% include 'header.html' %}
+        <style>
+            #aman1{
+                margin:10px;
+                
+            }
+            #aman2{
+                margin:10px; 
+            }
+            #sub{
+                width:90px;
+                height:30px;
+                background:#000;
+                color:#fff;
+            }
+        </style>
+       <h1 > Welcome to admin panel</h1>
+       {% for msg in messages %}
+       <div id="message4">
+       <p >{{msg}}<span id="cross4" ><i class="fa fa-hand-scissors fa-lg" onclick="aman4()" ></i></span></p>
+       </div>
+       {% endfor %}
+       <div>
+           <img src=" https://media.istockphoto.com/photos/innovative-technology-in-a-modern-hospital-operating-room-futuristic-picture-id1315141049" id="admin-panel-img">
+       </div>
+       <form method="post" style="margin:15px; ">
+           <h1 style="margin-top:15px;">Login</h1>
+           <fieldset style="width:40vw;">
+           {% csrf_token %}
+           <label for="aman1">Name</label>
+           <input type="text" placeholder="enter your name" id="aman1" name="name"size="30" required><br>
+           <label for="aman2">Email</label>
+           <input type="email" placeholder="enter your email here" id="aman2" name="email"size="30" required><br>
+           <input type="submit" value="submit" id="sub">
+           </fieldset>
+       </form>
+       <button type="button" id="patient-back-btn"><a href="/" >Back to HOME</a></button>
+       {% include 'footer.html' %}

@@ -1,0 +1,33 @@
+#details-img{
+    width:99vw;
+    height:45vh;
+}
+#admin-panel-img{
+    width:99vw;
+    height:45vh;
+}
+#sub{
+    width:90px;
+    height:30px;
+    background:#000;
+    color:#fff;
+}
+#appointment-img{
+    width:99vw;
+    height:45vh;
+}
+#record-img{
+    width:99vw;
+    height:45vh; 
+}
+.imgs{
+    width:99vw;
+    height:45vh;
+}
+#cancel-btn{
+    width:90px;
+    height:30px;
+    background:#000;
+    color:#fff;
+}
+

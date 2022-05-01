@@ -1,0 +1,20 @@
+
+        {% load static %}
+        {% include 'header.html' %}
+      
+       <h1> welcome ms {{doctor.name}}</h1>
+       <h2>Here is the details of patients</h2>
+       <div>
+           <img src="{% static '/image/data.jpeg' %}"class="imgs">
+       </div>
+       
+       <table border="1" id="patient-table">
+        <tr><th>Patient id</th><th>patient name</th><th>patient phno</th><th>patient email</th></tr>
+        {% for pat in patient %}
+        <tr><td>{{pat.id}}</td><td>{{pat.name}}</td><td>{{pat.phno}}</td><td>{{pat.email}}</td></tr>
+         {% endfor %}
+    </table>
+    <br><br>
+       <button type="button"id="patient-back-btn"><a href="/" >Back to Home</a></button>
+       <br><br>
+       {% include 'footer.html' %}
